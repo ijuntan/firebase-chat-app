@@ -1,42 +1,101 @@
 #root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
+  background-color: #202A44;
+  width: 100%;
   text-align: center;
+  height: 100vh;
 }
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
+h1 {
+  color:white
 }
 
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input {
+  line-height: 1.5;
+  width: 50%;
+  border-radius: 10px;
+  font-size: 1.5rem;
+  border: 1px solid black;
+  outline: none;
+  padding: 0 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
+main {
+  max-height: 67vh;
+  overflow-y: scroll;
+  display: flex;
+  flex-direction: column;
 }
 
-.card {
-  padding: 2em;
+main::-webkit-scrollbar {
+  width: 0.25rem;
 }
 
-.read-the-docs {
-  color: #888;
+main::-webkit-scrollbar-track {
+  background: #1e1e24;
+}
+
+main::-webkit-scrollbar-thumb {
+  background: #6649b8;
+}
+
+section {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  max-width: 1280px;
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  padding: 0.5rem 0;
+  background-color: rgb(40, 37, 53);
+}
+
+header {
+  margin-bottom: 2rem;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.sent {
+  flex-direction: row-reverse;
+}
+
+.sent p {
+  color: white;
+  background: #0b93f6;
+  align-self: flex-end;
+  padding: 10px;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.received p {
+  background: #e5e5ea;
+  color: black;
+  padding: 10px;
+  border-radius: 10px;
+  margin-left: 5px;
+}
+
+img {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin: 2px 5px;
+}
+
+input {
+  margin-right: 10px;
+}
+
+form {
+  display: flex;
+  justify-content: center;
+  padding-top: 1rem;
+  padding-bottom: 0.5rem;
+  border-top: 1px solid #ccc;
 }
