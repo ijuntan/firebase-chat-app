@@ -3,6 +3,9 @@
   width: 100%;
   text-align: center;
   height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 h1 {
@@ -39,7 +42,6 @@ main::-webkit-scrollbar-thumb {
 }
 
 section {
-  border: 1px solid #ccc;
   border-radius: 10px;
   max-width: 1280px;
   margin: auto;
@@ -98,4 +100,9 @@ form {
   padding-top: 1rem;
   padding-bottom: 0.5rem;
   border-top: 1px solid #ccc;
+}
+
+.signIn {
+  display: flex;
+  justify-content: center;
 }
