@@ -17,7 +17,7 @@ const app = initializeApp({
   appId: "1:399819046034:web:6047799fd386773751ba4b",
   measurementId: "G-TZ691GQWYT"
 })
-const analytics = getAnalytics(app);
+
 const auth = getAuth(app)
 const db = getFirestore(app)
 
