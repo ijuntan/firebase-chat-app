@@ -7,4 +7,7 @@ a single group-chat using firebase as storage and auth
 
 # development
 - vite + react, basic css
-- CI/CD pipeline
+- CI/CD pipeline using Github Action
+
+# demo
+https://chat-app-94000.web.app/
